@@ -1,12 +1,12 @@
 import React from "react";
-import Rarirt1 from "../../assets/img/rarity-1.jpg";
-import Rarirt2 from "../../assets/img/rarity-2.jpg";
-import Rarirt3 from "../../assets/img/rarity-3.jpg";
-import Rarirt4 from "../../assets/img/rarity-4.jpg";
-import Rarirt5 from "../../assets/img/rarity-5.jpg";
-import Rarirt6 from "../../assets/img/rarity-6.jpg";
-import Rarirt7 from "../../assets/img/rarity-7.jpg";
-import Rarirt8 from "../../assets/img/rarity-8.jpg";
+import Rarirt1 from "../../assets/img/rarity-1.png";
+import Rarirt2 from "../../assets/img/2.png";
+import Rarirt3 from "../../assets/img/rarity-3.png";
+import Rarirt4 from "../../assets/img/rarity-4.png";
+import Rarirt5 from "../../assets/img/rarity-5.png";
+import Rarirt6 from "../../assets/img/rarity-6.png";
+import Rarirt7 from "../../assets/img/rarity-7.png";
+import Rarirt8 from "../../assets/img/rarity-8.png";
 import Rarirt from "../../assets/img/rarity.jpg";
 
 const Index = () => {
