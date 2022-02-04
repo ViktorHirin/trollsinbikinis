@@ -1,38 +1,1299 @@
-.App {
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #fff;
+}
+html {
+  scroll-behavior: smooth;
+}
+img {
+  max-width: 100%;
+}
+marquee {
+  display: block;
+}
+
+.btn.focus,
+.btn:focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+.h1,
+.h2,
+.h3,
+h1,
+h2,
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  color: #1a191b;
+}
+
+.border-warning {
+  border-color: #ffa928 !important;
+}
+
+.text-warning {
+  color: #ffa928 !important;
+}
+
+.bg-warning {
+  background-color: #ffbb28 !important;
+}
+
+.bg-dark {
+  background-color: #0f1111 !important;
+}
+
+.py-6 {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.main-title {
+  font-size: 50px;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 20px;
+  padding-left: 7px;
+}
+
+.main-title.center {
+  text-align: center;
+  padding-left: 0px;
+}
+
+.main-title.center:before {
+  content: "";
+  position: absolute;
+  left: auto;
+}
+
+.main-title.center.whitedot:before {
+  background-color: #fff;
+}
+
+.main-title:before {
+  content: "";
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  background-color: #ffa928;
+  border-radius: 100%;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.main-title.white {
+  color: #fff;
+}
+
+/* ========================== Header CSS Start ========================== */
+
+header .navbar {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+header .navbar-dark .navbar-nav .nav-item {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+header .navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 5px 12px;
+}
+
+header .nav-link:focus,
+header .navbar-dark .navbar-nav .nav-link:hover {
+  color: #1f1408;
+  background-color: #ffbb28;
+  border-radius: 3px;
+  box-shadow: 0 2px 0 #ff9900;
+}
+
+header .navbar-dark .navbar-nav .active > .nav-link,
+header .navbar-dark .navbar-nav .nav-link.active,
+header .navbar-dark .navbar-nav .nav-link.show,
+header .navbar-dark .navbar-nav .show > .nav-link {
+  color: #1f1408;
+  background-color: #ffbb28;
+  border-radius: 3px;
+  box-shadow: 0 2px 0 #ff9900;
+}
+
+.header {
+  background: url(./assets/img/header.jpg) no-repeat center;
+  background-size: cover;
+  height: 850px;
+}
+
+header .navbar-dark .navbar-nav.social-media .nav-link {
+  background-color: #5f5f5f;
+  border-radius: 100%;
+  width: 34px;
+  height: 34px;
+  padding: 0 !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px !important;
+}
+
+header .social-media .nav-link:focus,
+header .navbar-dark .navbar-nav.social-media .nav-link:hover {
+  background-color: #ffa928 !important;
+  border-radius: 100% !important;
+  box-shadow: none !important;
+  color: #fff !important;
+}
+
+header .navbar-dark .navbar-nav.social-media .nav-item {
+  padding-left: 10px !important;
+  padding-right: 0px !important;
+}
+
+/* ========================== Header CSS End ========================== */
+
+/* ========================== Timer CSS Start ========================== */
+
+.timer-main {
+  border: 1px solid #241c31 !important;
+  padding: 20px !important;
+}
+
+.timer-main .flipdown {
+  margin: auto;
+}
+
+.timer-main h2 {
+  color: #1a191b;
+  font-family: "Montserrat", sans-serif;
+}
+
+.timer-main p {
+  font-weight: 300;
+  color: #4a4a4a;
+  font-size: 26px;
+  line-height: 34px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.flipdown.flipdown__theme-dark .rotor,
+.flipdown.flipdown__theme-dark .rotor-top,
+.flipdown.flipdown__theme-dark .rotor-leaf-front {
+  background-color: #ffbb28;
+}
+
+.flipdown.flipdown__theme-dark .rotor-bottom,
+.flipdown.flipdown__theme-dark .rotor-leaf-rear {
+  color: #fff;
+  background-color: #ffa928;
+}
+
+.flipdown.flipdown__theme-dark .rotor:after {
+  border-top: solid 1px #ffa928;
+}
+
+.flipdown.flipdown__theme-dark
+  .rotor-group:nth-child(n + 2):nth-child(-n + 3):before,
+.flipdown.flipdown__theme-dark
+  .rotor-group:nth-child(n + 2):nth-child(-n + 3):after {
+  background-color: #ffbb28;
+  left: 113px;
+}
+
+.flipdown .rotor-group {
+  padding-right: 26px;
+}
+
+.flipdown.flipdown__theme-dark .rotor-group-heading:before {
+  color: #1a191b;
+  font-size: 15px;
+}
+
+/* ========================== Timer CSS End ========================== */
+/* ========================== Mint Now CSS Start ========================== */
+
+.mint-now-box {
+  background: url(./assets/img/mintnow-bg.jpg) bottom center no-repeat, #f82f2e;
+  border-radius: 5px;
+  box-shadow: 0 2px 0 #efe7cb;
+}
+
+.mint-header {
+  background-color: #ffca28;
+  padding: 12px 30px;
+  border-radius: 5px 5px 0 0;
+  position: relative;
+}
+
+.mint-header-text {
+  width: 75%;
+}
+
+.mint-box-logo {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.mint-box-logo img {
+  border-radius: 0 5px 0 0;
+  max-width: 100%;
+}
+
+.mint-box-title {
+  font-size: 28px;
+}
+
+.mint-box-para {
+  font-size: 18px;
+  color: #1a191b;
+  line-height: 24px;
+}
+
+.mint-box-body {
+  padding: 45px 30px 20px 30px;
+}
+
+.price-box {
+  background: linear-gradient(120deg, #f8e596, #ffffff);
+  border-radius: 5px;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-between;
+}
+
+.price-box img {
+  margin-top: -20px;
+}
+
+.price-text-box {
+  padding: 10px;
+}
+
+.price-text {
+  font-size: 16px;
+  color: #1a191b;
+  font-weight: 700;
+}
+
+.price-tag {
+  font-size: 20px;
+  color: #1a191b;
+  font-weight: 700;
+  background-color: #ffca28;
+  border-radius: 3px;
+  padding: 6px;
+}
+
+.mint-now-box .input-group-append .btn {
+  background-color: #fff;
+  font-size: 17px;
+  color: #7a7a7a;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+.mint-now-box .form-control {
+  height: 50px;
+  padding: 0.375rem 0.75rem;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #1a191b;
+  border: none;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+.total-box {
+  background-color: #3a353f;
+  border-radius: 5px;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2);
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+  display: block;
+  padding: 10px;
+  text-transform: uppercase;
+  margin-top: 15px;
+}
+
+.mint-btn {
+  border: 2px solid #fff;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 6px 40px;
+}
+
+@media screen and (max-width: 1199px) {
+  .mint-box-body {
+    padding: 57px 30px 20px 30px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .mint-box-body {
+    padding: 45px 30px 20px 30px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .mint-box-logo {
+    width: 100px;
+  }
+}
+
+/* ========================== Mint Now CSS End ========================== */
+
+/* ========================== Sold Out CSS Start ========================== */
+
+.sold-box {
+  background: url(./assets/img/mintnow-bg.jpg) bottom center no-repeat, #f82f2e !important;
+  border: 5px solid #efe7cb;
+}
+
+/* ========================== Sold Out CSS End ========================== */
+
+/* ========================== The Numbers CSS Start ========================== */
+
+/*.numbers-main {
+  background: url(../../assets/img/numbers-left-bg.jpg) top left no-repeat, url(../../assets/img/numbers-top-bg.jpg) top left 40px no-repeat, url(../../assets/img/numbers-right-bg.jpg) top right no-repeat, url(../../assets/img/numbers-bottom-bg.jpg) bottom left 40px no-repeat, #ffca28 !important;
+  padding: 34px 60px 50px 50px;
+}*/
+.numbers-main {
+  background: url(./assets/img/number-bg.jpg) top left no-repeat;
+  padding: 21px 60px 45px 50px;
+}
+
+.number-list {
+  margin-top: 14px;
+}
+
+.number-list li {
+  font-size: 18px;
+  color: #1a191b;
+  margin-bottom: 4px;
+}
+
+.number-list li:last-child {
+  margin-bottom: 0px;
+}
+
+.number-list li img {
+  vertical-align: middle;
+}
+
+/* ========================== The Numbers CSS End ========================== */
+
+/* ========================== Welcome Part CSS Start ========================== */
+
+.welcome-part {
+  background: url(./assets/img/welcome-bg.jpg) right bottom no-repeat, #241c31;
+}
+
+.welcome-text {
+  font-family: "Oleo Script Swash Caps", cursive;
+  font-size: 40px;
+  margin-bottom: -5px;
+  display: block;
+}
+
+.welcome-para {
+  font-size: 17px;
+  color: #cfcfcf;
+  line-height: 26px;
+}
+
+/* ========================== Welcome Part CSS End ========================== */
+
+/* ========================== Slider Part CSS Start ========================== */
+
+.slider-part {
+  padding: 30px 0 !important;
+  background-color: #09070c !important;
+}
+.marquee-wrapper {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.marquee-wrapper .container {
+  overflow: hidden;
+  max-width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.marquee-inner span {
+  float: left;
+  width: 50%;
+}
+
+.marquee-wrapper .marquee-block {
+  --total-marquee-items: 15;
+  height: 180px;
+  width: calc(190px * (var(--total-marquee-items)));
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+  margin: 10px auto;
+}
+
+.marquee-inner {
+  display: -webkit-block;
+  display: -moz-block;
+  display: -ms-block;
+  display: block;
+  width: 200%;
+  position: absolute;
+}
+
+.marquee-inner.to-left {
+  -webkit-animation: marqueeLeft 60s linear infinite;
+  -moz-animation: marqueeLeft 60s linear infinite;
+  -o-animation: marqueeLeft 60s linear infinite;
+  -ms-animation: marqueeLeft 60s linear infinite;
+  animation: marqueeLeft 60s linear infinite;
+}
+
+.marquee-inner.to-right {
+  -webkit-animation: marqueeRight 60s linear infinite;
+  -moz-animation: marqueeRight 60s linear infinite;
+  -o-animation: marqueeRight 60s linear infinite;
+  -ms-animation: marqueeRight 60s linear infinite;
+  animation: marqueeRight 60s linear infinite;
+}
+
+.marquee-item {
+  width: 180px;
+  height: auto;
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-block;
+  margin: 0 5px;
+  /* float: left; */
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  border: 2px solid #343337;
+  padding: 8px;
+}
+@-moz-keyframes marqueeLeft {
+  0% {
+    -webkit-left: 0;
+    -moz-left: 0;
+    -o-left: 0;
+    -ms-left: 0;
+    left: 0;
+  }
+  100% {
+    -webkit-left: -100%;
+    -moz-left: -100%;
+    -o-left: -100%;
+    -ms-left: -100%;
+    left: -100%;
+  }
+}
+@-webkit-keyframes marqueeLeft {
+  0% {
+    -webkit-left: 0;
+    -moz-left: 0;
+    -o-left: 0;
+    -ms-left: 0;
+    left: 0;
+  }
+  100% {
+    -webkit-left: -100%;
+    -moz-left: -100%;
+    -o-left: -100%;
+    -ms-left: -100%;
+    left: -100%;
+  }
+}
+@-o-keyframes marqueeLeft {
+  0% {
+    -webkit-left: 0;
+    -moz-left: 0;
+    -o-left: 0;
+    -ms-left: 0;
+    left: 0;
+  }
+  100% {
+    -webkit-left: -100%;
+    -moz-left: -100%;
+    -o-left: -100%;
+    -ms-left: -100%;
+    left: -100%;
+  }
+}
+@keyframes marqueeLeft {
+  0% {
+    -webkit-left: 0;
+    -moz-left: 0;
+    -o-left: 0;
+    -ms-left: 0;
+    left: 0;
+  }
+  100% {
+    -webkit-left: -100%;
+    -moz-left: -100%;
+    -o-left: -100%;
+    -ms-left: -100%;
+    left: -100%;
+  }
+}
+@-moz-keyframes marqueeRight {
+  0% {
+    -webkit-left: -100%;
+    -moz-left: -100%;
+    -o-left: -100%;
+    -ms-left: -100%;
+    left: -100%;
+  }
+  100% {
+    -webkit-left: 0;
+    -moz-left: 0;
+    -o-left: 0;
+    -ms-left: 0;
+    left: 0;
+  }
+}
+@-webkit-keyframes marqueeRight {
+  0% {
+    -webkit-left: -100%;
+    -moz-left: -100%;
+    -o-left: -100%;
+    -ms-left: -100%;
+    left: -100%;
+  }
+  100% {
+    -webkit-left: 0;
+    -moz-left: 0;
+    -o-left: 0;
+    -ms-left: 0;
+    left: 0;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@-o-keyframes marqueeRight {
+  0% {
+    -webkit-left: -100%;
+    -moz-left: -100%;
+    -o-left: -100%;
+    -ms-left: -100%;
+    left: -100%;
+  }
+  100% {
+    -webkit-left: 0;
+    -moz-left: 0;
+    -o-left: 0;
+    -ms-left: 0;
+    left: 0;
+  }
 }
 
-.App-link {
-  color: #61dafb;
+@keyframes marqueeRight {
+  0% {
+    -webkit-left: -100%;
+    -moz-left: -100%;
+    -o-left: -100%;
+    -ms-left: -100%;
+    left: -100%;
+  }
+  100% {
+    -webkit-left: 0;
+    -moz-left: 0;
+    -o-left: 0;
+    -ms-left: 0;
+    left: 0;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* ========================== Slider Part CSS End ========================== */
+
+/* ========================== Rarity Part CSS Start ========================== */
+
+.rarity-para {
+  color: #4a4a4a;
+  font-size: 22px;
+  line-height: 32px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.rarity-info {
+  border-radius: 20px;
+  box-shadow: 0 4px 0 #ffa928;
+  text-align: center;
+}
+
+.rarity-info ul li {
+  font-size: 16px;
+  color: #4a4a4a;
+  font-weight: 700;
+  border-right: 1px solid #dddddd;
+  padding: 0 18px;
+  margin: 0;
+}
+
+.rarity-info ul li:last-child {
+  border-right: none;
+}
+
+.rarity-info ul li span {
+  font-size: 26px;
+}
+
+/* ========================== Rarity Part CSS End ========================== */
+
+/* ========================== Milestones CSS Start ========================== */
+
+.milestones-part {
+  background: url(./assets/img/milestones-bg.jpg) no-repeat top center, #84a421;
+}
+
+.milestones-title {
+  color: #f5c90c;
+  font-weight: 700;
+  font-size: 28px;
+  text-transform: uppercase;
+}
+
+.right.two::before {
+  border: medium solid #fe8700;
+  border-width: 24px 24px 24px 0;
+  border-color: transparent #fe8700 transparent transparent;
+}
+
+.right.two::after {
+  background: url(./assets/img//milestone-2.png) no-repeat;
+}
+
+.right.two .time-content {
+  border: 4px solid #fe8700;
+}
+
+.right.two .milestones-title {
+  color: #fe8700;
+}
+
+.right.three::before {
+  border: medium solid #eb314e;
+  border-width: 24px 24px 24px 0;
+  border-color: transparent #eb314e transparent transparent;
+}
+
+.right.three::after {
+  background: url(./assets/img//milestone-4.png) no-repeat;
+}
+
+.right.three .time-content {
+  border: 4px solid #eb314e;
+}
+
+.right.three .milestones-title {
+  color: #eb314e;
+}
+
+.right.four::before {
+  border: medium solid #00abff;
+  border-width: 24px 24px 24px 0;
+  border-color: transparent #00abff transparent transparent;
+}
+
+.right.four::after {
+  background: url(./assets/img//milestone-6.png) no-repeat;
+}
+
+.right.four .time-content {
+  border: 4px solid #00abff;
+}
+
+.right.four .milestones-title {
+  color: #00abff;
+}
+
+.right.five::before {
+  border: medium solid #c45bff;
+  border-width: 24px 24px 24px 0;
+  border-color: transparent #c45bff transparent transparent;
+}
+
+.right.five::after {
+  background: url(./assets/img//milestone-8.png) no-repeat;
+}
+
+.right.five .time-content {
+  border: 4px solid #c45bff;
+}
+
+.right.five .milestones-title {
+  color: #c45bff;
+}
+
+.left.two::before {
+  border: medium solid #b7ff46;
+  border-width: 24px 0 24px 24px;
+  border-color: transparent transparent transparent #b7ff46;
+}
+
+.left.two::after {
+  background: url(./assets/img//milestone-3.png) no-repeat;
+}
+
+.left.two .time-content {
+  border: 4px solid #b7ff46;
+}
+
+.left.two .milestones-title {
+  color: #b7ff46;
+}
+
+.left.three::before {
+  border: medium solid #ffb6d1;
+  border-width: 24px 0 24px 24px;
+  border-color: transparent transparent transparent #ffb6d1;
+}
+
+.left.three::after {
+  background: url(./assets/img//milestone-5.png) no-repeat;
+}
+
+.left.three .time-content {
+  border: 4px solid #ffb6d1;
+}
+
+.left.three .milestones-title {
+  color: #ffb6d1;
+}
+
+.left.four::before {
+  border: medium solid #00fff9;
+  border-width: 24px 0 24px 24px;
+  border-color: transparent transparent transparent #00fff9;
+}
+
+.left.four::after {
+  background: url(./assets/img//milestone-7.png) no-repeat;
+}
+
+.left.four .time-content {
+  border: 4px solid #00fff9;
+}
+
+.left.four .milestones-title {
+  color: #00fff9;
+}
+
+.time-content p {
+  font-size: 18px;
+  color: #fff;
+  line-height: 24px;
+  border-top: 1px solid #725d48;
+  margin: 0;
+  padding-top: 10px;
+}
+
+.timeline {
+  position: relative;
+  margin-top: 115px;
+  padding: 60px 0 110px;
+}
+
+.time-container {
+  padding: 0px 110px 0px 20px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+  z-index: 1;
+}
+
+.left {
+  left: 0px;
+}
+
+.left::after {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+}
+
+.time-content {
+  padding: 10px 20px;
+  background-color: #341f0a;
+  position: relative;
+  border-radius: 5px;
+  border: 4px solid #f5c90c;
+}
+
+.right {
+  left: 50%;
+  padding: 0px 20px 0px 110px;
+}
+
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 160px;
+  background: url(./assets/img/road.png);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -80px;
+}
+
+.time-container::after {
+  content: "";
+  position: absolute;
+  width: 86px;
+  height: 90px;
+  right: -25px;
+  background: url(./assets/img/milestone-1.png) no-repeat;
+  top: 15px;
+  z-index: 1;
+}
+
+.right::after {
+  left: -25px;
+}
+
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 86px;
+  border: medium solid #fe8700;
+  border-width: 24px 24px 24px 0;
+  border-color: transparent #fe8700 transparent transparent;
+}
+
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 86px;
+  border: medium solid #f5c90c;
+  border-width: 24px 0 24px 24px;
+  border-color: transparent transparent transparent #f5c90c;
+}
+
+@media screen and (max-width: 767px) {
+  .timeline::after {
+    left: 31px;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media screen and (max-width: 767px) {
+  .time-container {
+    width: 100%;
+    padding-left: 117px;
+    padding-right: 0px;
+    padding-bottom: 10px;
   }
+}
+
+@media screen and (max-width: 767px) {
+  .time-container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .left::after,
+  .right::after {
+    left: 18px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .right {
+    left: 0%;
+  }
+}
+
+/* ========================== Milestones CSS End ========================== */
+
+/* ========================== Feature CSS Start ========================== */
+
+.feature-bg {
+  background: url(./assets/img/feature-bg.jpg) repeat top left;
+  position: relative;
+}
+
+.feature-bg:before {
+  content: "";
+  position: absolute;
+  background: url(./assets/img/feature-top-bg.png) repeat-x top left;
+  height: 144px;
+  width: 100%;
+  top: -144px;
+}
+
+.feature-para {
+  font-size: 22px;
+  color: #cfcfcf;
+  text-align: center;
+}
+
+.feature-box {
+  border: 1px solid #505450 !important;
+  padding: 30px !important;
+  height: 100%;
+}
+
+.feature-box-title {
+  color: #ebebeb;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.feature-text {
+  color: #cfcfcf;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+/* ========================== Feature CSS End ========================== */
+
+/* ========================== Team CSS Start ========================== */
+
+.team-title {
+  font-size: 30px;
+  color: #1a191b;
+}
+
+.team-title span {
+  font-size: 20px;
+}
+
+/* ========================== Team CSS End ========================== */
+
+/* ========================== FAQ CSS Start ========================== */
+
+#accordion .card {
+  border-radius: 0;
+  border: 1px solid #505450;
+  background: transparent;
+  margin: 10px 0;
+}
+
+#accordion .card-header {
+  padding: 30px 24px;
+}
+
+#accordion .card-header a {
+  font-size: 24px;
+  font-weight: 300;
+  color: #cfcfcf;
+  width: 100%;
+  line-height: 1.2rem;
+  position: relative;
+  padding-right: 30px;
+}
+
+#accordion .card-header a:hover {
+  text-decoration: none;
+}
+
+#accordion .card-header a i {
+  position: absolute;
+  right: 0;
+}
+
+#accordion .highlight a {
+  color: #ffa928;
+}
+
+#accordion .card-body {
+  padding-top: 0;
+}
+
+#accordion .card-body .card-text {
+  color: #cfcfcf;
+  font-size: 18px;
+}
+
+/* ========================== FAQ CSS End ========================== */
+
+/* ========================== Footer CSS Start ========================== */
+
+.footer-part {
+  background: url(./assets/img/ftr-bg.jpg) no-repeat center top;
+  background-size: 100%;
+  padding-top: 70px;
+  position: relative;
+}
+
+.ftr-link a {
+  background-color: #343434;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 5px 0px;
+  padding: 6px 12px;
+}
+
+.ftr-link a:hover {
+  background-color: #ffa928;
+  color: #fff;
+}
+
+.footer-part:before {
+  content: "";
+  position: absolute;
+  background: url(./assets/img/ftr-cheetah.png) no-repeat bottom right;
+  height: 424px;
+  width: 348px;
+  top: -312px;
+  right: 50px;
+}
+
+/* ========================== Footer CSS End ========================== */
+
+/* ========================== Responsive CSS Start ========================== */
+
+@media (min-width: 1921px) and (max-width: 2400px) {
+  .header {
+    height: 1000px;
+  }
+}
+
+@media (min-width: 1600px) and (max-width: 1800px) {
+  .header {
+    height: 690px;
+  }
+}
+
+@media (min-width: 1210px) and (max-width: 1599px) {
+  .header {
+    height: 450px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .header {
+    height: 520px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .numbers-main {
+    background: #ffca28 !important;
+    padding: 20px;
+    border: 5px solid #efe7cb;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .rarity-info ul li {
+    font-size: 17px;
+    padding: 0 13px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  header .navbar-dark .navbar-nav .nav-link {
+    font-size: 14px;
+  }
+  header .navbar-dark .navbar-nav .nav-item {
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .header {
+    height: 430px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .navbar-toggler {
+    padding: 3px 10px;
+    background-color: #ffa928;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .social-media {
+    flex-direction: row;
+    padding-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  header .navbar-collapse {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .rarity-info ul li {
+    display: block;
+    font-size: 17px;
+    border-right: none;
+    border-bottom: 1px solid #dddddd;
+    padding: 6px 0px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .rarity-info {
+    padding: 0 15px !important;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .rarity-para {
+    font-size: 20px;
+    line-height: 33px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .milestones-title {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .time-content p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .feature-para {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  #accordion .card-header a {
+    font-size: 22px;
+    line-height: 28px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .footer-part:before {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    height: 330px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .flipdown .rotor-group {
+    padding-right: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .milestones-part {
+    background: url(./assets/img//milestones-bg.jpg) no-repeat top right,
+      #84a421;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .timeline {
+    margin-top: 36px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .rarity-para {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 6px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .timer-main p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .main-title {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .welcome-text {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .main-title:before {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .welcome-part {
+    background: none;
+    background-color: #241c31;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .rarity-para {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .feature-para {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .flipdown .rotor-group:nth-child(n + 2):nth-child(-n + 3):before,
+  .flipdown .rotor-group:nth-child(n + 2):nth-child(-n + 3):after {
+    left: 69px !important;
+  }
+}
+.jumptarget::before {
+  content: "";
+  display: block;
+  height: 100px; /* fixed header height*/
+  margin: -50px 0 0; /* negative fixed header height */
 }

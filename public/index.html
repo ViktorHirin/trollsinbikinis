@@ -7,7 +7,11 @@
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
-      content="Web site created using create-react-app"
+      content="The Cheetah Gang is 10000 unique, high quality, hand drawncollectibles cheetah NFTs with proof of ownership stored on the Ethereum blockchain."
+    />
+    <meta
+      name="keywords"
+      content="NFT, best NFT to buy, NFT Art, NFT Collection, NFTs"
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <!--
@@ -15,6 +19,33 @@
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps:400,700&amp;display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i&amp;display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pbutcher.uk/flipdown/css/flipdown/flipdown.css"
+    />
+
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -24,9 +55,9 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>The Cheetah Gang - Unique NFT Collection</title>
   </head>
-  <body>
+  <body id="page-top">
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
@@ -39,5 +70,158 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/8170a6ff40.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-209503822-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-209503822-1");
+    </script>
+
+    <script>
+      if (window.innerWidth < 768) {
+        $("[data-bss-disabled-mobile]")
+          .removeClass("animated")
+          .removeAttr("data-aos data-bss-hover-animate");
+      }
+
+      $(document).ready(function () {
+        AOS.init();
+      });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="https://pbutcher.uk/flipdown/js/flipdown/flipdown.js"></script>
+    <script>
+      /*Accordion*/
+      $(document).ready(function () {
+        // Add down arrow icon for collapse element which is open by default
+        $(".collapse.show").each(function () {
+          $(this)
+            .prev(".card-header")
+            .find(".fas")
+            .addClass("fa-minus")
+            .removeClass("fa-plus");
+          $(this).prev(".card-header").addClass("highlight");
+        });
+        // Toggle right and down arrow icon on show hide of collapse element
+        $(".collapse")
+          .on("show.bs.collapse", function () {
+            $(this)
+              .prev(".card-header")
+              .find(".fas")
+              .removeClass("fa-plus")
+              .addClass("fa-minus");
+          })
+          .on("hide.bs.collapse", function () {
+            $(this)
+              .prev(".card-header")
+              .find(".fas")
+              .removeClass("fa-minus")
+              .addClass("fa-plus");
+          });
+
+        // Highlight open collapsed element
+        $(".card-header .btn-block").click(function () {
+          $(".card-header").not($(this).parents()).removeClass("highlight");
+          $(this).parents(".card-header").toggleClass("highlight");
+        });
+      });
+
+      /*Timer*/
+
+      document.addEventListener("DOMContentLoaded", () => {
+        // Unix timestamp (in seconds) to count down to
+        // var arr = "2021-10-20 13:00:00".split(/[- :]/),
+        //   datum = new Date(arr[0], arr[1] - 1, arr[2], arr[3], arr[4], arr[5]);
+        var datum = new Date(Date.UTC("2021", "09", "20", "13", "00", "00"));
+        // var datum = Date.parse('2021 10 15 18:00:00');
+        var twoDaysFromNow = datum / 1000;
+
+        // Set up FlipDown
+
+        var flipdown = new FlipDown(twoDaysFromNow)
+
+          // Start the countdown
+          .start()
+
+          // Do something when the countdown ends
+          .ifEnded(() => {
+            console.log("The countdown has ended!");
+            localStorage.setItem("time", "0");
+          });
+
+        var ver = document.getElementById("ver");
+        ver.innerHTML = flipdown.version;
+      });
+
+      /*!
+       * Start Bootstrap - Agency v6.0.2 (https://startbootstrap.com/template-overviews/agency)
+       * Copyright 2013-2020 Start Bootstrap
+       * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-agency/blob/master/LICENSE)
+       */
+      (function ($) {
+        "use strict"; // Start of use strict
+
+        // Smooth scrolling using jQuery easing
+        $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
+          if (
+            location.pathname.replace(/^\//, "") ==
+              this.pathname.replace(/^\//, "") &&
+            location.hostname == this.hostname
+          ) {
+            var target = $(this.hash);
+            target = target.length
+              ? target
+              : $("[name=" + this.hash.slice(1) + "]");
+            if (target.length) {
+              $("html, body").animate(
+                {
+                  scrollTop: target.offset().top - 89,
+                },
+                1000,
+                "easeInOutExpo"
+              );
+              return false;
+            }
+          }
+        });
+
+        // Closes responsive menu when a scroll trigger link is clicked
+        $(".js-scroll-trigger").click(function () {
+          $(".navbar-collapse").collapse("hide");
+        });
+
+        // Activate scrollspy to add active class to navbar items on scroll
+        $("body").scrollspy({
+          target: "#mainNav",
+          offset: 90,
+        });
+
+        // Collapse now if page is not at top
+        navbarCollapse();
+        // Collapse the navbar when page is scrolled
+        $(window).scroll(navbarCollapse);
+      })(jQuery); // End of use strict
+    </script>
   </body>
 </html>
