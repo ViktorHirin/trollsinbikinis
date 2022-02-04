@@ -6,7 +6,7 @@ const Index = () => {
       <div className="container">
         <h2 className="main-title center">Milestones</h2>
         <p className="rarity-para">
-          We’ve established multiple milestones for The Cheetah Gang. When we
+          We’ve established multiple milestones for The Trollsinbikinis. When we
           reach a particular milestone, we will move towards the next milestone.
         </p>
         <div className="timeline time-body">
@@ -64,7 +64,7 @@ const Index = () => {
               <h2 className="milestones-title">Milestone 5</h2>
               <p>
                 Collaboration with other NFT projects in order to increase
-                exposure of The Cheetah Gang.
+                exposure of The Trolls in Bikinis.
               </p>
             </div>
           </div>

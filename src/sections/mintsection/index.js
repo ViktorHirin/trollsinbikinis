@@ -110,7 +110,7 @@ export default Index;
 const Timer = () => (
   <div className="border border-dark p-3 timer-main">
     <h2>
-      The Cheetah Gang is <span className="text-warning">Coming</span>
+      The Trolls in Bikinis is <span className="text-warning">Coming</span>
     </h2>
     <p>
       OCTOBER 20TH 1:00 PM UTC
@@ -125,9 +125,9 @@ const MintBox = ({ msg = "Connect", connect, loadWeb3 }) => (
   <div className="mint-now-box">
     <div className="mint-header">
       <div className="mint-header-text">
-        <h3 className="mint-box-title">Join The Cheetah Gang</h3>
+        <h3 className="mint-box-title">Join The Trolls In  Bikinis!</h3>
         <p className="mb-0 mint-box-para">
-          Enter the amount of cheetah you would like to purchase.
+          Enter the amount of troll you would like to purchase.
         </p>
       </div>
       <div className="mint-box-logo">
@@ -162,9 +162,9 @@ const MintNowBox = ({
   <div className="mint-now-box">
     <div className="mint-header">
       <div className="mint-header-text">
-        <h3 className="mint-box-title">Join The Cheetah Gang</h3>
+        <h3 className="mint-box-title">Join The Trolls in Bikinis</h3>
         <p className="mb-0 mint-box-para">
-          Enter the amount of cheetah you would like to purchase.
+          Enter the amount of trolls you would like to purchase.
         </p>
       </div>
       <div className="mint-box-logo">

@@ -1,7 +1,11 @@
 body {
   font-family: "Roboto", sans-serif;
-  background-color: #fff;
+  background-color: #3498db;
 }
+header {
+  height: 128px;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -1043,6 +1047,7 @@ header .navbar-dark .navbar-nav.social-media .nav-item {
   background-size: 100%;
   padding-top: 70px;
   position: relative;
+  background-color: #FFF;
 }
 
 .ftr-link a {
@@ -1064,7 +1069,7 @@ header .navbar-dark .navbar-nav.social-media .nav-item {
 .footer-part:before {
   content: "";
   position: absolute;
-  background: url(./assets/img/ftr-cheetah.png) no-repeat bottom right;
+  background: url(./assets/img/logo.png) no-repeat bottom right;
   height: 424px;
   width: 348px;
   top: -312px;
@@ -1089,7 +1094,7 @@ header .navbar-dark .navbar-nav.social-media .nav-item {
 
 @media (min-width: 1210px) and (max-width: 1599px) {
   .header {
-    height: 450px;
+    height: 710px;
   }
 }
 

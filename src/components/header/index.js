@@ -1,7 +1,7 @@
 import React from "react";
 
-import Logo from "../../assets/img/logo.svg";
-import Discord from "../../assets/img/discord-icon.svg";
+import Logo from "../../assets/img/logo.png";
+// import Discord from "../../assets/img/discord-icon.svg";
 
 const Index = ({ account, loadWeb3 }) => {
   return (
@@ -30,11 +30,11 @@ const Index = ({ account, loadWeb3 }) => {
                     Mint
                   </a>
                 </li>
-                <li className="nav-item">
+                {/* <li className="nav-item">
                   <a className="nav-link js-scroll-trigger" href="#story">
                     The Story
                   </a>
-                </li>
+                </li> */}
                 <li className="nav-item">
                   <a className="nav-link js-scroll-trigger" href="#milestones">
                     Milestones
@@ -57,7 +57,7 @@ const Index = ({ account, loadWeb3 }) => {
                 </li>
               </ul>
               <ul className="navbar-nav social-media mt-2 mt-sm-0">
-                <li className="nav-item ">
+                {/* <li className="nav-item ">
                   <a
                     className="nav-link"
                     href="https://discord.com/invite/TheCheetahGang"
@@ -76,7 +76,7 @@ const Index = ({ account, loadWeb3 }) => {
                   >
                     <i className="fab fa-twitter"></i>
                   </a>
-                </li>
+                </li> */}
                 <li className="nav-item">
                   <button
                     className="btn btn-danger font-weight-bold "

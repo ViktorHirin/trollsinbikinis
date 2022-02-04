@@ -7,7 +7,7 @@ import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import {
   MintSection,
-  StorySection,
+  // StorySection,
   SliderSection,
   RaritySection,
   Milestone,
@@ -66,7 +66,7 @@ const Index = ({
           chainId={chainId}
           loadWeb3={loadWeb3}
         />
-        <StorySection />
+        {/* <StorySection /> */}
         <SliderSection />
         <RaritySection />
         <Milestone />

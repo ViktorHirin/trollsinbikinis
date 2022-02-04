@@ -1,19 +1,19 @@
 import React from "react";
-import TeamImage1 from "../../assets/img/team-img1.jpg";
-import TeamImage2 from "../../assets/img/team-img2.jpg";
-import TeamImage3 from "../../assets/img/team-img3.jpg";
-import TeamImage4 from "../../assets/img/team-img4.jpg";
+import TeamImage1 from "../../assets/img/team-img1.png";
+import TeamImage2 from "../../assets/img/team-img2.png";
+import TeamImage3 from "../../assets/img/team-img3.png";
+import TeamImage4 from "../../assets/img/team-img4.png";
 const Index = () => {
   return (
     <section id="team" className="team-part py-6 bg-warning jumptarget">
       <div className="container">
         <h2 className="main-title center whitedot">
-          <strong>Meet the movers and shakers behind The Cheetah Gang</strong>
+          <strong>Meet the movers and shakers behind The Trollsinbikinis</strong>
         </h2>
         <p className="rarity-para">
-          The cheetah gang was established by a squad that are devoted to NFTs.
+          The Trollsinbikinis was established by a squad that are devoted to NFTs.
           These highly experienced crew created the marvelous world of The
-          Cheetah Gang.{" "}
+          Trollsinbikinis.{" "}
         </p>
         <div className="row">
           <div
@@ -24,7 +24,7 @@ const Index = () => {
           >
             <img className="mb-2" src={TeamImage1} alt="TeamImage1" />
             <h4 className="font-weight-bold team-title">
-              Alfredo
+              Shaun
               <span className="font-weight-normal d-block">NFT Enthusiast</span>
             </h4>
             <p className="mb-0">
@@ -40,13 +40,13 @@ const Index = () => {
           >
             <img className="mb-2" src={TeamImage2} alt="TeamImage2" />
             <h4 className="font-weight-bold team-title">
-              Maestro
+              Yegor
               <span className="font-weight-normal d-block">
                 Creative Artist
               </span>
             </h4>
             <p className="mb-0">
-              Maestro is the art director who is a pro at creating the most
+              Yegor is the art director who is a pro at creating the most
               visually stunning pieces of art.
             </p>
           </div>
@@ -58,13 +58,13 @@ const Index = () => {
           >
             <img className="mb-2" src={TeamImage3} alt="TeamImage3" />
             <h4 className="font-weight-bold team-title">
-              Phantom
+              Alex
               <span className="font-weight-normal d-block">
                 Marketing Wizard
               </span>
             </h4>
             <p className="mb-0">
-              Phantom is a marketing genius and no one can beat him at marketing
+              Alex is a marketing genius and no one can beat him at marketing
               strategies and management.
             </p>
           </div>
@@ -76,7 +76,7 @@ const Index = () => {
           >
             <img className="mb-2" src={TeamImage4} alt="TeamImage4" />
             <h4 className="font-weight-bold team-title">
-              Techie Beast
+              Viktor
               <span className="font-weight-normal d-block">Coding Freak</span>
             </h4>
             <p className="mb-0">

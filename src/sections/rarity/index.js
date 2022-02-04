@@ -1,13 +1,13 @@
 import React from "react";
 import Rarirt1 from "../../assets/img/rarity-1.png";
-import Rarirt2 from "../../assets/img/2.png";
+import Rarirt2 from "../../assets/img/rarity-2.png";
 import Rarirt3 from "../../assets/img/rarity-3.png";
 import Rarirt4 from "../../assets/img/rarity-4.png";
 import Rarirt5 from "../../assets/img/rarity-5.png";
 import Rarirt6 from "../../assets/img/rarity-6.png";
 import Rarirt7 from "../../assets/img/rarity-7.png";
 import Rarirt8 from "../../assets/img/rarity-8.png";
-import Rarirt from "../../assets/img/rarity.jpg";
+import Rarirt from "../../assets/img/rarity.png";
 
 const Index = () => {
   return (
@@ -15,8 +15,8 @@ const Index = () => {
       <div className="container">
         <h2 className="main-title center">Rarity</h2>
         <p className="rarity-para">
-          The Cheetah Gang is one of its kind. We are different and unique. The
-          rarity of our NFT is that we have used 150 traits in our Cheetah
+          The Trollsinbikinis is one of its kind. We are different and unique. The
+          rarity of our NFT is that we have used 150 traits in our Trollsinbikinis
           artwork. Check below to see the distinctive qualities of our artwork.
         </p>
         <div className="row align-items-center">
@@ -24,6 +24,7 @@ const Index = () => {
             <div className="row">
               <div className="col-6 mb-4 text-center">
                 <img
+                  sizes="160"
                   data-aos="zoom-in"
                   data-aos-delay="50"
                   src={Rarirt1}
@@ -111,43 +112,35 @@ const Index = () => {
               <span className="d-block text-warning font-weight-bold">
                 10000
               </span>
-              Cheetah
+              Troll
             </li>
             <li className="list-inline-item">
-              <span className="d-block text-warning font-weight-bold">8</span>
-              Earring
+              <span className="d-block text-warning font-weight-bold">10</span>
+              Bikinis
             </li>
             <li className="list-inline-item">
-              <span className="d-block text-warning font-weight-bold">18</span>
+              <span className="d-block text-warning font-weight-bold">13</span>
               Background
             </li>
             <li className="list-inline-item">
-              <span className="d-block text-warning font-weight-bold">46</span>
-              Clothes
+              <span className="d-block text-warning font-weight-bold">2</span>
+              Earring
             </li>
             <li className="list-inline-item">
-              <span className="d-block text-warning font-weight-bold">15</span>
-              Body
+              <span className="d-block text-warning font-weight-bold">11</span>
+              HandStuff
             </li>
             <li className="list-inline-item">
-              <span className="d-block text-warning font-weight-bold">33</span>
-              Eyes / Eyewear
+              <span className="d-block text-warning font-weight-bold">10</span>
+              Mouse
             </li>
             <li className="list-inline-item">
-              <span className="d-block text-warning font-weight-bold">24</span>
-              Hat / Hair
+              <span className="d-block text-warning font-weight-bold">11</span>
+              Eyes
             </li>
             <li className="list-inline-item">
-              <span className="d-block text-warning font-weight-bold">25</span>
-              Mouth
-            </li>
-            <li className="list-inline-item">
-              <span className="d-block text-warning font-weight-bold">4</span>
-              Mask
-            </li>
-            <li className="list-inline-item">
-              <span className="d-block text-warning font-weight-bold">5</span>
-              Nose
+              <span className="d-block text-warning font-weight-bold">11</span>
+              Hat
             </li>
           </ul>
         </div>

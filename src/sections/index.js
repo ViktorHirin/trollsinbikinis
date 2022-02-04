@@ -1,5 +1,5 @@
 export { default as MintSection } from "./mintsection";
-export { default as StorySection } from "./story";
+// export { default as StorySection } from "./story";
 export { default as SliderSection } from "./slider";
 export { default as RaritySection } from "./rarity";
 export { default as Milestone } from "./milestone";

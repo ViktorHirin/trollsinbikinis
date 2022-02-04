@@ -320,7 +320,7 @@ function App() {
         open={lessMintAmountAlert}
         onClose={setLessMintAmountAlert}
         title="Oops"
-        text="Atleast 1 Cheetah should be minted"
+        text="Atleast 1 Trollsinbikinis  should be minted"
       />
       <InformationModal
         open={accessAccountDenied}
@@ -362,7 +362,7 @@ function App() {
         open={switchToMainnet}
         onClose={setswitchToMainnet}
         title="Error"
-        text="Please switch to mainnet to mint Cheetah"
+        text="Please switch to mainnet to mint Troll"
       />
       <InformationModal
         open={ethereumCompatibleBrowser}

@@ -15,7 +15,7 @@ const Index = () => {
             What makes us stand out from the Rest?
           </h2>
           <p className="feature-para">
-            The Cheetah Gang is undoubtedly distinctive. Here are some of the
+            The Trolls in Bikinis is undoubtedly distinctive. Here are some of the
             features that make us second to none.{" "}
           </p>
           <div className="row">
@@ -42,7 +42,7 @@ const Index = () => {
                 <img className="mb-3" src={Feature2} alt="featureIcon1" />
                 <h4 className="feature-box-title mb-3">Ownership</h4>
                 <p className="feature-text mb-0">
-                  The owners of the Cheetah NFT will have full commercial
+                  The owners of the Troll NFT will have full commercial
                   rights.
                 </p>
               </div>
@@ -56,7 +56,7 @@ const Index = () => {
                 <img className="mb-3" src={Feature3} alt="featureIcon3" />
                 <h4 className="feature-box-title mb-3">Fair Distribution</h4>
                 <p className="feature-text mb-0">
-                  All Cheetah NFTs will be distributed fairly and without any
+                  All Trolls NFTs will be distributed fairly and without any
                   discrimination. We believe in giving equal chance to everyone.
                 </p>
               </div>
@@ -70,7 +70,7 @@ const Index = () => {
                 <img className="mb-3" src={Feature4} alt="featureIcon4" />
                 <h4 className="feature-box-title mb-3">Artists </h4>
                 <p className="feature-text mb-0">
-                  All the Cheetah NFT artworks are created by artists using best
+                  All the Trolls NFT artworks are created by artists using best
                   technology and with great precision.{" "}
                 </p>
               </div>
