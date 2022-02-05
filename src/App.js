@@ -73,15 +73,16 @@ function App() {
     setContract(contract);
     const chainId = await window.web3.eth.getChainId();
     setChainId(chainId);
-    //success when chainId = 4 else failure
+    //success when chainId = 137 else failure for polygon
     // you are connected to main net
     // Please connect to main net
 
-    if (chainId === 1) {
-      toast(`You are connected to main net`, {
+    if (chainId === 80001) {
+      toast(`You are connected to Polygon test net`, {
         type: "success",
         position: toast.POSITION.BOTTOM_CENTER,
       });
+      
       const totalSupply = await contract.methods.totalSupply().call();
       setTotalSupply(totalSupply);
 
