@@ -70,6 +70,7 @@ function App() {
 
   const loadBlockchainData = async () => {
     const contract = new window.web3.eth.Contract(contractAbi, contractAddress);
+    console.log(contract);
     setContract(contract);
     const chainId = await window.web3.eth.getChainId();
     setChainId(chainId);
@@ -84,12 +85,18 @@ function App() {
       });
       
       const totalSupply = await contract.methods.totalSupply().call();
+      // const totalSupply = 100
       setTotalSupply(totalSupply);
-
+      
       const price = await contract.methods.price().call();
       setPrice(price);
+      
+
       const displayPrice = window.web3.utils.fromWei(price, "ether");
       setDisplayPrice(displayPrice);
+
+      console.log(displayPrice);
+
       const MAX_SUPPlY = await contract.methods.MAX_SUPPlY().call();
       // console.log("MAX_SUPPLY:", MAX_SUPPlY);
       setMaxSupply(MAX_SUPPlY);
@@ -135,13 +142,17 @@ function App() {
 
   async function mint(mintCount) {
     if (contract) {
-      if (chainId === 1) {
-        const presaleOpen = await contract.methods.presaleOpen().call();
-        const saleOpen = await contract.methods.saleOpen().call();
+      if (chainId === 80001) {
+
         const eligibility = await contract.methods
           .checkPresaleEligiblity(account)
           .call();
-        // console.log("saleopen:", saleOpen);
+          
+        const presaleOpen = await contract.methods.presaleOpen().call();
+        const saleOpen = await contract.methods.saleOpen().call();
+        console.log("saleopen:", saleOpen);
+        console.log("presaleopen:", presaleOpen);
+
         if (presaleOpen === false && saleOpen === false) {
           setPreSale(true);
         } else if (presaleOpen === true && saleOpen === false) {

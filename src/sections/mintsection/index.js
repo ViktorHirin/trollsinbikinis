@@ -36,7 +36,7 @@ const Index = ({
             {difference > 0 ? (
               <Timer />
             ) : account ? (
-              chainId === 1 ? (
+              chainId === 80001 ? (
                 totalSupply !== 0 && totalSupply === maxSupply ? (
                   <Soldout />
                 ) : (
@@ -65,7 +65,7 @@ const Index = ({
                   <img className="mr-2" src={Check} alt="cheak" />
                   Mint Cost :{" "}
                   <strong>
-                   0.04 ETH + GAS
+                   0.04 MATIC + GAS
                   </strong>
                 </li>
                 <li>
@@ -90,7 +90,7 @@ const Index = ({
                 </li>
                 <li>
                   <img className="mr-2" src={Check} alt="cheak" />
-                  Token Type : <strong>ERC-721</strong>
+                  Token Type : <strong>Polygon</strong>
                 </li>
                 <li>
                   <img className="mr-2" src={Check} alt="cheak" />
@@ -177,9 +177,9 @@ const MintNowBox = ({
           <div className="price-box">
             <img src={MintCheeta} alt="mint-cheetha" />
             <div className="price-text-box text-right">
-              <h5 className="price-text">Price per Cheetah</h5>
+              <h5 className="price-text">Price Trolls in Bikinis</h5>
               <h4 className="price-tag">
-                <span className="text-danger">{displayPrice}</span> ETH Each
+                <span className="text-danger">{displayPrice}</span> MATIC Each
               </h4>
               <h5 className="price-text mb-0">
                 {maxSupply-totalSupply} remaining
@@ -203,7 +203,7 @@ const MintNowBox = ({
             </div>
           </div>
           <span className="total-box">
-            Total <strong>{(displayPrice * value).toFixed(3)} ETH</strong>
+            Total <strong>{(displayPrice * value).toFixed(3)} MATIC</strong>
           </span>
         </div>
       </div>
