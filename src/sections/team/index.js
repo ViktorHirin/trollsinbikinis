@@ -24,12 +24,11 @@ const Index = () => {
           >
             <img className="mb-2" src={TeamImage1} alt="TeamImage1" />
             <h4 className="font-weight-bold team-title">
-              Shaun
-              <span className="font-weight-normal d-block">NFT Enthusiast</span>
+              Christopher Moss (Aka Batman)
+              <span className="font-weight-normal d-block"><a href="https://qhiinc.com/batcave">https://qhiinc.com/batcave</a></span>
             </h4>
             <p className="mb-0">
-              Alfredo eats, sleeps and breaths NFT and Crypto. He’s an NFT lover
-              and hodler of crypto for life.
+              Christopher Moss (Aka Batman), is an entrepreneneur who loves the NFT business, he spends most of his time in the Batcave.
             </p>
           </div>
           <div
@@ -40,13 +39,13 @@ const Index = () => {
           >
             <img className="mb-2" src={TeamImage2} alt="TeamImage2" />
             <h4 className="font-weight-bold team-title">
-              Yegor
+            ROB MOSAKOWSKI
               <span className="font-weight-normal d-block">
-                Creative Artist
+              Creative Artist
               </span>
             </h4>
             <p className="mb-0">
-              Yegor is the art director who is a pro at creating the most
+              ROB MOSAKOWSKI is the art director who is a pro at creating the most
               visually stunning pieces of art.
             </p>
           </div>
@@ -58,14 +57,15 @@ const Index = () => {
           >
             <img className="mb-2" src={TeamImage3} alt="TeamImage3" />
             <h4 className="font-weight-bold team-title">
-              Alex
+            Shaun Yeager
               <span className="font-weight-normal d-block">
-                Marketing Wizard
+                <a href="https://qhiinc.com/batcave">https://qhiinc.com/shaun</a>
               </span>
             </h4>
             <p className="mb-0">
-              Alex is a marketing genius and no one can beat him at marketing
+              Shaun Yeager is a marketing genius and no one can beat him at marketing
               strategies and management.
+              I have been helping homeowners / businesses for over (20) years and I can't wait to help you!
             </p>
           </div>
           <div
