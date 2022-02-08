@@ -17,40 +17,23 @@ const Index = () => {
         </p>
         <div className="row">
           <div
-            className="col-lg-3 text-center mb-lg-0 mb-4"
+            className="col-lg-4 text-center mb-lg-0 mb-4"
             data-aos="fade"
             data-aos-duration="1500"
             data-aos-delay="300"
           >
             <img className="mb-2" src={TeamImage1} alt="TeamImage1" />
             <h4 className="font-weight-bold team-title">
-              Christopher Moss (Aka Batman)
+              Christopher Moss  <br/> (Aka Batman)
               <span className="font-weight-normal d-block"><a href="https://qhiinc.com/batcave">https://qhiinc.com/batcave</a></span>
             </h4>
             <p className="mb-0">
               Christopher Moss (Aka Batman), is an entrepreneneur who loves the NFT business, he spends most of his time in the Batcave.
             </p>
           </div>
+          
           <div
-            className="col-lg-3 text-center mb-lg-0 mb-4"
-            data-aos="fade"
-            data-aos-duration="1500"
-            data-aos-delay="600"
-          >
-            <img className="mb-2" src={TeamImage2} alt="TeamImage2" />
-            <h4 className="font-weight-bold team-title">
-            ROB MOSAKOWSKI
-              <span className="font-weight-normal d-block">
-              Creative Artist
-              </span>
-            </h4>
-            <p className="mb-0">
-              ROB MOSAKOWSKI is the art director who is a pro at creating the most
-              visually stunning pieces of art.
-            </p>
-          </div>
-          <div
-            className="col-lg-3 text-center mb-lg-0 mb-4"
+            className="col-lg-4 text-center mb-lg-0 mb-4"
             data-aos="fade"
             data-aos-duration="1500"
             data-aos-delay="900"
@@ -69,14 +52,14 @@ const Index = () => {
             </p>
           </div>
           <div
-            className="col-lg-3 text-center mb-lg-0 mb-4"
+            className="col-lg-4 text-center mb-lg-0 mb-4"
             data-aos="fade"
             data-aos-duration="1500"
             data-aos-delay="1200"
           >
             <img className="mb-2" src={TeamImage4} alt="TeamImage4" />
             <h4 className="font-weight-bold team-title">
-              Viktor
+              Viktor Hirin
               <span className="font-weight-normal d-block">Coding Freak</span>
             </h4>
             <p className="mb-0">
