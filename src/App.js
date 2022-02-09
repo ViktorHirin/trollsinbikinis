@@ -70,7 +70,6 @@ function App() {
 
   const loadBlockchainData = async () => {
     const contract = new window.web3.eth.Contract(contractAbi, contractAddress);
-    console.log(contract);
     setContract(contract);
     const chainId = await window.web3.eth.getChainId();
     setChainId(chainId);
@@ -147,7 +146,8 @@ function App() {
         const eligibility = await contract.methods
           .checkPresaleEligiblity(account)
           .call();
-          
+        
+        console.log(`eligbility = `,eligibility);
         const presaleOpen = await contract.methods.presaleOpen().call();
         const saleOpen = await contract.methods.saleOpen().call();
         console.log("saleopen:", saleOpen);
@@ -156,14 +156,12 @@ function App() {
         if (presaleOpen === false && saleOpen === false) {
           setPreSale(true);
         } else if (presaleOpen === true && saleOpen === false) {
-          if (eligibility) {
+          // if (eligibility) {
             if (mintCount === 0) {
               setLessMintAmountAlert(true);
             } else {
               setConfirmTransaction(true);
               const finalPrice = Number(price) * mintCount;
-
-            
 
               contract.methods
                 .mintNFT(mintCount)
@@ -210,9 +208,9 @@ function App() {
                   }
                 });
             }
-          } else {
-            setPreSaleEligibility(true);
-          }
+          // } else {
+          //   setPreSaleEligibility(true);
+          // }
         } else {
           if (mintCount === 0) {
             setLessMintAmountAlert(true);
@@ -322,12 +320,12 @@ function App() {
         title="No presale or sale open yet"
         text="No presale or sale open yet. Please follow our discord for the updates"
       />
-      <InformationModal
+      {/* <InformationModal
         open={preSaleEligibility}
         onClose={setPreSaleEligibility}
         title="Not Presale Eligible"
         text="You are not whitelisted for presale"
-      />
+      /> */}
       <InformationModal
         open={lessMintAmountAlert}
         onClose={setLessMintAmountAlert}

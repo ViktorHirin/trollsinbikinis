@@ -13,13 +13,7 @@ export const contractAbi = [
 		"type": "function"
 	},
 	{
-		"inputs": [
-			{
-				"internalType": "string",
-				"name": "baseURI",
-				"type": "string"
-			}
-		],
+		"inputs": [],
 		"stateMutability": "nonpayable",
 		"type": "constructor"
 	},
@@ -222,19 +216,6 @@ export const contractAbi = [
 			}
 		],
 		"name": "setApprovalForAll",
-		"outputs": [],
-		"stateMutability": "nonpayable",
-		"type": "function"
-	},
-	{
-		"inputs": [
-			{
-				"internalType": "string",
-				"name": "baseURI",
-				"type": "string"
-			}
-		],
-		"name": "setBaseURI",
 		"outputs": [],
 		"stateMutability": "nonpayable",
 		"type": "function"
@@ -625,4 +606,5 @@ export const contractAbi = [
 ];
 // export const contractAddress = "0xBe10903776Fc7293b88bD2C037e9572692495c52";
 // export const contractAddress = "0x45cC39E739928501641BD8E052Ab52b56BF1c25b";
-export const contractAddress = "0xFDa65FBc5BDA9F3E2AE0C70e89A624615dac06aA";
+
+export const contractAddress = "0x2EA824221D75C7a65bEFbb8f8cf2e67085b50c64";

@@ -6,13 +6,7 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [
-					{
-						"internalType": "string",
-						"name": "baseURI",
-						"type": "string"
-					}
-				],
+				"inputs": [],
 				"stateMutability": "nonpayable",
 				"type": "constructor"
 			},
@@ -464,19 +458,6 @@
 			{
 				"inputs": [
 					{
-						"internalType": "string",
-						"name": "baseURI",
-						"type": "string"
-					}
-				],
-				"name": "setBaseURI",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
 						"internalType": "uint256",
 						"name": "_max_allowed_limit",
 						"type": "uint256"
@@ -546,6 +527,19 @@
 						"internalType": "string",
 						"name": "",
 						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "totalSupply",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -789,11 +783,11 @@
 			]
 		},
 		"trollNFTMint.sol": {
-			"keccak256": "0xf2003c480fb409f73ee02d405847edf90819775ca5304fb62c7f127084fac936",
+			"keccak256": "0xf508ebb24005884f64c5cbf4a8e285ea8cf49681b85723549fdc0b6d9a651519",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://f4201bd5fcbe7d057d405df85a956eb5b47447903f34e68f2045d7edbfe13ec0",
-				"dweb:/ipfs/QmR4HvXLNkygVsWtxScHxQU6rsbM4WmQwhvsYdH7MpC9Lh"
+				"bzz-raw://bfcca0ba07bc90d48b58626e9439af3b87704e8f61615acaee47373c0c24ee17",
+				"dweb:/ipfs/Qmf6Qh5uj26VSnYhPQp7Q3y1mTVn9FPAp8Q3n2uVAUMuVm"
 			]
 		}
 	},
