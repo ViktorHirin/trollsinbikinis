@@ -133,8 +133,8 @@ header .navbar-dark .navbar-nav .show > .nav-link {
 
 .header {
   background: url(./assets/img/header.jpg) no-repeat center;
-  background-size: cover;
-  height: 850px;
+  background-size: contain;
+  /* max-height: 850px; */
 }
 
 header .navbar-dark .navbar-nav.social-media .nav-link {

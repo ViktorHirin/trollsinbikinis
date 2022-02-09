@@ -110,7 +110,7 @@ const Index = () => {
           <ul className="list-inline m-0">
             <li className="list-inline-item">
               <span className="d-block text-warning font-weight-bold">
-                10000
+                10,000
               </span>
               Trolls
             </li>

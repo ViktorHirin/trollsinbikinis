@@ -30,7 +30,7 @@ const Index = () => {
             >
               <div className="card-body">
                 <p className="card-text">
-                  There will be 10000 Trolls on the Ethereum Blockchain.
+                  There will be 10,000 Trolls on the Ethereum Blockchain.
                 </p>
               </div>
             </div>
@@ -45,7 +45,7 @@ const Index = () => {
                   href="#accordion .item-2"
                   className="btn-block"
                 >
-                  How much will one Trolls NFT cost?
+                  How much will one Trolls In Bikinis NFT cost?
                   <i className="fas fa-plus float-right"></i>
                 </a>
               </h5>
@@ -57,7 +57,7 @@ const Index = () => {
             >
               <div className="card-body">
                 <p className="card-text">
-                  The price of one Trolls will be 0.04 ETH + GAS Fees
+                  The price of one Trolls In Bikinis will be 0.04 MATIC + GAS Fees
                 </p>
               </div>
             </div>
@@ -136,7 +136,7 @@ const Index = () => {
             >
               <div className="card-body">
                 <p className="card-text">
-                  The Cheetah Gang will be listed on OpenSea once the sale is
+                  The Trolls In Bikinis will be listed on OpenSea once the sale is
                   over.
                 </p>
               </div>
@@ -169,7 +169,7 @@ const Index = () => {
               </div>
             </div>
           </div>
-          <div className="card" data-aos="fade-up" data-aos-delay="600">
+          {/* <div className="card" data-aos="fade-up" data-aos-delay="600">
             <div className="card-header" role="tab">
               <h5 className="mb-0">
                 <a
@@ -195,7 +195,7 @@ const Index = () => {
                 </p>
               </div>
             </div>
-          </div>
+          </div> */}
           <div className="card" data-aos="fade-up" data-aos-delay="700">
             <div className="card-header" role="tab">
               <h5 className="mb-0">
@@ -218,8 +218,7 @@ const Index = () => {
             >
               <div className="card-body">
                 <p className="card-text">
-                  The best way to contact the Team is through Discord or
-                  Twitter.
+                  The best way to contact the Team is through email @ info@trollsinbikinis.com.
                 </p>
               </div>
             </div>

@@ -84,10 +84,10 @@ const Index = ({
                   <img className="mr-2" src={Check} alt="cheak" />
                   Giveaway Supply : <strong>50 (reserved for contest)</strong>
                 </li>
-                <li>
+                {/* <li>
                   <img className="mr-2" src={Check} alt="cheak" />
                   Royalty Fees : <strong>3%</strong>
-                </li>
+                </li> */}
                 <li>
                   <img className="mr-2" src={Check} alt="cheak" />
                   Token Type : <strong>Polygon</strong>
@@ -113,7 +113,7 @@ const Timer = () => (
       The Trolls in Bikinis is <span className="text-warning">Coming</span>
     </h2>
     <p>
-      OCTOBER 20TH 1:00 PM UTC
+      March 20TH 00:00 AM UTC
       <br />
       PRE-SALE STARTS IN
     </p>
@@ -125,7 +125,7 @@ const MintBox = ({ msg = "Connect", connect, loadWeb3 }) => (
   <div className="mint-now-box">
     <div className="mint-header">
       <div className="mint-header-text">
-        <h3 className="mint-box-title">Join The Trolls In  Bikinis!</h3>
+        <h3 className="mint-box-title">Join Trolls In  Bikinis!</h3>
         <p className="mb-0 mint-box-para">
           Enter the amount of troll you would like to purchase.
         </p>

@@ -30,7 +30,7 @@ const Index = () => {
             <p className="welcome-para">
               This is your once in a lifetime chance to own these unique and
               gorgeous looking trolls through our NFT artwork. We have a
-              collection of 10000 distinctive and exquisite NFT artworks of
+              collection of 10,000 distinctive and exquisite NFT artworks of
               Trolls, and each of these artworks is worth possessing. Not only
               will you acquire an excellent piece of art, but you will also do a
               good deed and be a part of animal welfare. When you buy our
