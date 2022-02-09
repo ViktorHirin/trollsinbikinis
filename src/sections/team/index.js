@@ -3,6 +3,7 @@ import TeamImage1 from "../../assets/img/team-img1.png";
 import TeamImage2 from "../../assets/img/team-img2.png";
 import TeamImage3 from "../../assets/img/team-img3.png";
 import TeamImage4 from "../../assets/img/team-img4.png";
+import BatmanImage from "../../assets/img/batcave.png";
 const Index = () => {
   return (
     <section id="team" className="team-part py-6 bg-warning jumptarget">
@@ -25,7 +26,13 @@ const Index = () => {
             <img className="mb-2" src={TeamImage1} alt="TeamImage1" />
             <h4 className="font-weight-bold team-title">
               Christopher Moss  <br/> (Aka Batman)
-              <span className="font-weight-normal d-block"><a href="https://qhiinc.com/batcave">https://qhiinc.com/batcave</a></span>
+              <span className="font-weight-normal d-block">
+                
+                <a href="https://qhiinc.com/batcave" target="_blank">
+                  <img className="mb-2" src={BatmanImage} alt="Batman" />
+                </a>
+                
+              </span>
             </h4>
             <p className="mb-0">
               Christopher Moss (Aka Batman), is an entrepreneneur who loves the NFT business, he spends most of his time in the Batcave.
@@ -42,7 +49,7 @@ const Index = () => {
             <h4 className="font-weight-bold team-title">
             Shaun Yeager
               <span className="font-weight-normal d-block">
-                <a href="https://qhiinc.com/batcave">https://qhiinc.com/shaun</a>
+              Marketing Genius
               </span>
             </h4>
             <p className="mb-0">
