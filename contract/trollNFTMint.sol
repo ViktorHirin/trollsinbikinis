@@ -13,8 +13,8 @@ contract Troll is ERC721URIStorage, Ownable {
     uint256 public MAX_ALLOWED = 7;
     uint256 public OWNER_RESERVED = 50;
     uint256 public price = 77000000000000000;
-    string baseTokenURI;
-    
+    string baseTokenURI = "https://gateway.pinata.cloud/ipfs/QmdrLbCME7gz4u3ihGVFWEcNrQnxv1Kp2DkmrvvDcZb86v/";
+
     mapping(address => bool) private _presaleEligible;
     
     bool public saleOpen = false;
@@ -22,14 +22,14 @@ contract Troll is ERC721URIStorage, Ownable {
 
     event NFTMinted(uint256 totalMinted);
 
-    constructor(string memory baseURI) ERC721("trolls in bikinis", "TROLL") {
-        setBaseURI(baseURI);
+    constructor() ERC721("trollsinbikinis", "TROLL") {
+        // setBaseURI(baseURI);
     }
 
 
-    function setBaseURI(string memory baseURI) public onlyOwner {
-        baseTokenURI = baseURI;
-    }
+    //function setBaseURI(string memory baseURI) public onlyOwner {
+    //    baseTokenURI = baseURI;
+    //}
 
     function setPrice(uint256 _newPrice) public onlyOwner {
         price = _newPrice;
@@ -123,17 +123,21 @@ contract Troll is ERC721URIStorage, Ownable {
     function checkPresaleEligiblity(address addr) public view returns (bool) {
         return _presaleEligible[addr];
     }
+
+    function totalSupply() public view returns(uint256) {
+        return _tokenId.current();
+    }
     
     function _mint(address _to) private {
         _tokenId.increment();
         uint256 tokenId = _tokenId.current();
         _safeMint(_to, tokenId);
-        _setTokenURI(tokenId, string(abi.encodePacked(baseTokenURI, ".json")));
+        _setTokenURI(tokenId, string(abi.encodePacked(baseTokenURI,Strings.toString(tokenId), ".json")));
         emit NFTMinted(tokenId);
     }
 
-    function _baseURI() internal view virtual override returns (string memory) {
-        return baseTokenURI;
-    }
+    //function _baseURI() internal view virtual override returns (string memory) {
+    //    return baseTokenURI;
+    //}
     
 }
