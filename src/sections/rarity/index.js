@@ -112,7 +112,7 @@ const Index = () => {
               <span className="d-block text-warning font-weight-bold">
                 10000
               </span>
-              Troll
+              Trolls
             </li>
             <li className="list-inline-item">
               <span className="d-block text-warning font-weight-bold">10</span>
@@ -120,19 +120,19 @@ const Index = () => {
             </li>
             <li className="list-inline-item">
               <span className="d-block text-warning font-weight-bold">13</span>
-              Background
+              Backgrounds
             </li>
             <li className="list-inline-item">
               <span className="d-block text-warning font-weight-bold">2</span>
-              Earring
+              Earrings
             </li>
             <li className="list-inline-item">
               <span className="d-block text-warning font-weight-bold">11</span>
-              HandStuff
+              Hand Items
             </li>
             <li className="list-inline-item">
               <span className="d-block text-warning font-weight-bold">10</span>
-              Mouse
+              Mouths
             </li>
             <li className="list-inline-item">
               <span className="d-block text-warning font-weight-bold">11</span>
@@ -140,7 +140,7 @@ const Index = () => {
             </li>
             <li className="list-inline-item">
               <span className="d-block text-warning font-weight-bold">11</span>
-              Hat
+              Hats
             </li>
           </ul>
         </div>
