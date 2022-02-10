@@ -68,7 +68,7 @@ const Index = () => {
               </p>
             </div>
           </div>
-          <div
+          {/* <div
             data-aos="fade-down"
             data-aos-delay="600"
             className="time-container right four"
@@ -80,14 +80,14 @@ const Index = () => {
                 Community.
               </p>
             </div>
-          </div>
+          </div> */}
           <div
             data-aos="fade-down"
             data-aos-delay="700"
-            className="time-container left four"
+            className="time-container right four"
           >
             <div className="time-content">
-              <h2 className="milestones-title">Milestone 7</h2>
+              <h2 className="milestones-title">Milestone 6</h2>
               <p>
                 Over 1000 NFT giveaways to holders on upcoming collaborating
                 projects.
@@ -95,7 +95,7 @@ const Index = () => {
               </p>
             </div>
           </div>
-          <div
+          {/* <div
             data-aos="fade-down"
             data-aos-delay="800"
             className="time-container right five"
@@ -104,7 +104,8 @@ const Index = () => {
               <h2 className="milestones-title">Milestone 8</h2>
               <p>Formation of DAO for the Community.</p>
             </div>
-          </div>
+          </div> */}
+
         </div>
       </div>
     </section>
