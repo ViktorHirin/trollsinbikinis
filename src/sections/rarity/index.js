@@ -15,9 +15,7 @@ const Index = () => {
       <div className="container">
         <h2 className="main-title center">Rarity</h2>
         <p className="rarity-para">
-          The Trollsinbikinis is one of its kind. We are different and unique. The
-          rarity of our NFT is that we have used 150 traits in our Trollsinbikinis
-          artwork. Check below to see the distinctive qualities of our artwork.
+        Trollsinbikinis ( TIB ) are one of a kind. We are different and unique due to the rarity of our NFT's. We have used 150 different traits in our TIB artwork. Check us out below!  Explore our interesting & distinct qualities.
         </p>
         <div className="row align-items-center">
           <div className="col-lg-4 text-center">

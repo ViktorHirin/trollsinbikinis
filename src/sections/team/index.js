@@ -9,12 +9,12 @@ const Index = () => {
     <section id="team" className="team-part py-6 bg-warning jumptarget">
       <div className="container">
         <h2 className="main-title center whitedot">
-          <strong>Meet the movers and shakers behind The Trollsinbikinis</strong>
+          <strong>Meet the movers and shakers behind The TrollsInBikinis - TIB</strong>
         </h2>
         <p className="rarity-para">
-          The Trollsinbikinis was established by a squad that are devoted to NFTs.
+          The TrollsInBikinis ( TIB ) was established by a squad that are devoted to NFTs.
           These highly experienced crew created the marvelous world of The
-          Trollsinbikinis.{" "}
+          TrollsInBikinis ( TIB ).
         </p>
         <div className="row">
           <div
@@ -25,17 +25,15 @@ const Index = () => {
           >
             <img className="mb-2" src={TeamImage1} alt="TeamImage1" />
             <h4 className="font-weight-bold team-title">
-              Christopher Moss  <br/> (Aka Batman)
+              Christopher <br/> (Aka Batman)
               <span className="font-weight-normal d-block">
-                
                 <a href="https://qhiinc.com/batcave" target="_blank">
                   <img className="mb-2" src={BatmanImage} alt="Batman" />
-                </a>
-                
+                </a>       
               </span>
             </h4>
             <p className="mb-0">
-              Christopher Moss (Aka Batman), is an entrepreneneur who loves the NFT business, he spends most of his time in the Batcave.
+            Christopher (Aka Batman), is an entrepreneur who loves the NFT business and he spends most of his time in his Batcave. 
             </p>
           </div>
           
@@ -47,15 +45,13 @@ const Index = () => {
           >
             <img className="mb-2" src={TeamImage3} alt="TeamImage3" />
             <h4 className="font-weight-bold team-title">
-            Shaun Yeager
+            Secreto
               <span className="font-weight-normal d-block">
               Marketing Genius
               </span>
             </h4>
             <p className="mb-0">
-              Shaun Yeager is a marketing genius and no one can beat him at marketing
-              strategies and management.
-              I have been helping homeowners / businesses for over (20) years and I can't wait to help you!
+            Secreto is a major producer of TIB NFT's and his goal is to one day take over the world.  I want this troll instead and the words switched out 
             </p>
           </div>
           <div
@@ -66,12 +62,11 @@ const Index = () => {
           >
             <img className="mb-2" src={TeamImage4} alt="TeamImage4" />
             <h4 className="font-weight-bold team-title">
-              Viktor Hirin
+              Viktor
               <span className="font-weight-normal d-block">Coding Freak</span>
             </h4>
             <p className="mb-0">
-              A pro at coding and programming, Beast has years of experience in
-              development - a wizard for sure.{" "}
+            Pro-coder and programming wizard with years of experience in multiple operating systems and methods.
             </p>
           </div>
         </div>

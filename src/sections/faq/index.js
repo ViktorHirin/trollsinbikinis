@@ -18,7 +18,7 @@ const Index = () => {
                   href="#accordion .item-1"
                   className="btn-block"
                 >
-                  How many Trolls’s will exist?
+                  How many TIB’s will exist?
                   <i className="fas fa-plus float-right"></i>
                 </a>
               </h5>
@@ -45,7 +45,7 @@ const Index = () => {
                   href="#accordion .item-2"
                   className="btn-block"
                 >
-                  How much will one Trolls In Bikinis NFT cost?
+                  How much will one TrollsInBikinis NFT cost?
                   <i className="fas fa-plus float-right"></i>
                 </a>
               </h5>
@@ -72,7 +72,7 @@ const Index = () => {
                   href="#accordion .item-3"
                   className="btn-block"
                 >
-                  How many Trolls can I own?
+                  How many TIB NFT's can I own?
                   <i className="fas fa-plus float-right"></i>
                 </a>
               </h5>
@@ -136,7 +136,7 @@ const Index = () => {
             >
               <div className="card-body">
                 <p className="card-text">
-                  The Trolls In Bikinis will be listed on OpenSea once the sale is
+                  The TrollsInBikinis will be listed on OpenSea once the sale is
                   over.
                 </p>
               </div>

@@ -6,7 +6,7 @@ const Index = () => {
       <div className="container">
         <h2 className="main-title center">Milestones</h2>
         <p className="rarity-para">
-          We’ve established multiple milestones for The Trollsinbikinis. When we
+          We’ve established multiple milestones for The TrollsInBikinis ( TIB ). When we
           reach a particular milestone, we will move towards the next milestone.
         </p>
         <div className="timeline time-body">

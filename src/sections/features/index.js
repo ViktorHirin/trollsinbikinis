@@ -42,8 +42,7 @@ const Index = () => {
                 <img className="mb-3" src={Feature2} alt="featureIcon1" />
                 <h4 className="feature-box-title mb-3">Ownership</h4>
                 <p className="feature-text mb-0">
-                  The owners of the Troll NFT will have full commercial
-                  rights.
+                The owners of these NFT's will have full commercial rights.
                 </p>
               </div>
             </div>
@@ -56,8 +55,7 @@ const Index = () => {
                 <img className="mb-3" src={Feature3} alt="featureIcon3" />
                 <h4 className="feature-box-title mb-3">Fair Distribution</h4>
                 <p className="feature-text mb-0">
-                  All Trolls NFTs will be distributed fairly and without any
-                  discrimination. We believe in giving equal chance to everyone.
+                All of these NFTs will be distributed fairly and without any discrimination. We believe in giving equal chance to everyone.
                 </p>
               </div>
             </div>
@@ -70,8 +68,7 @@ const Index = () => {
                 <img className="mb-3" src={Feature4} alt="featureIcon4" />
                 <h4 className="feature-box-title mb-3">Artists </h4>
                 <p className="feature-text mb-0">
-                  All the Trolls NFT artworks are created by artists using best
-                  technology and with great precision.{" "}
+                All of our NFT artworks are created by artists using the best technology and with great precision.
                 </p>
               </div>
             </div>
@@ -84,8 +81,7 @@ const Index = () => {
                 <img className="mb-3" src={Feature5} alt="featureIcon5" />
                 <h4 className="feature-box-title mb-3">No Reserved NFT </h4>
                 <p className="feature-text mb-0">
-                  We believe in transparency. None of the NFT artwork is
-                  reserved. They are 100% reserved for the public.{" "}
+                We believe in transparency. None of our NFT artwork is reserved unless it's for a contest. The rest of our NFT's are available for the public.
                 </p>
               </div>
             </div>
@@ -98,8 +94,7 @@ const Index = () => {
                 <img className="mb-3" src={Feature6} alt="featureIcon6" />
                 <h4 className="feature-box-title mb-3">Charity </h4>
                 <p className="feature-text mb-0">
-                  5% of the income we make will be donated for animal welfare.
-                  Join us and be a part of a good deed.{" "}
+                5% of the income we make will be donated to a 501(c)(3) entity that helps the homeless. Join us and help make an impact with at least one NFT at a time!
                 </p>
               </div>
             </div>
