@@ -45,7 +45,7 @@ const Index = ({ totalSupply, maxSupply }) => {
             {/* <!-- <li className="list-inline-item"><a className="btn" href="#"><img className="mr-2" src="assets/img/opensea.png"/>Buy On OpenSea</a></li> --> */}
           </ul>
         </div>
-        <p>Copyright © 2022 The Trolls In Bikinis. All rights reserved. </p>
+        <p>Copyright © 2022 Trolls In Bikinis - TIB. All rights reserved. </p>
       </div>
     </footer>
   );
