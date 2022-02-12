@@ -23,7 +23,7 @@ const Index = () => {
           >
             <img className="mb-2" src={TeamImage1} alt="TeamImage1" />
             <h4 className="font-weight-bold team-title">
-              Christopher <br/> (Aka Batman)
+              Batmandio <br/> (Aka Batman)
               <span className="font-weight-normal d-block">
                 <a href="https://qhiinc.com/batcave" target="_blank">
                   <img className="mb-2" src={BatmanImage} alt="Batman" />
@@ -31,7 +31,7 @@ const Index = () => {
               </span>
             </h4>
             <p className="mb-0">
-            Christopher (Aka Batman), is an entrepreneur who loves the NFT business and he spends most of his time in his Batcave. 
+            Batmandio (Aka Batman), is an entrepreneur who loves the NFT business and he spends most of his time in his Batcave.  So, if you see Christopher it needs to be Batmandio
             </p>
           </div>
           
