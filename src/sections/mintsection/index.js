@@ -125,7 +125,7 @@ const MintBox = ({ msg = "Connect", connect, loadWeb3 }) => (
   <div className="mint-now-box">
     <div className="mint-header">
       <div className="mint-header-text">
-        <h3 className="mint-box-title">Join Trolls In  Bikinis!</h3>
+        <h3 className="mint-box-title">Join TrollsInBikinis - TIB!</h3>
         <p className="mb-0 mint-box-para">
         Enter the amount of TrollsInBikinis - TIB you would like to purchase.
         </p>
@@ -162,9 +162,9 @@ const MintNowBox = ({
   <div className="mint-now-box">
     <div className="mint-header">
       <div className="mint-header-text">
-        <h3 className="mint-box-title">Join The Trolls in Bikinis</h3>
+        <h3 className="mint-box-title">Join The TrollsInBikinis - TIB</h3>
         <p className="mb-0 mint-box-para">
-          Enter the amount of trolls you would like to purchase.
+          Enter the amount of TrollsInBikinis - TIB you would like to purchase.
         </p>
       </div>
       <div className="mint-box-logo">
@@ -177,7 +177,7 @@ const MintNowBox = ({
           <div className="price-box">
             <img src={MintCheeta} alt="mint-cheetha" />
             <div className="price-text-box text-right">
-              <h5 className="price-text">Price Trolls in Bikinis</h5>
+              <h5 className="price-text">Price Trolls In Bikinis</h5>
               <h4 className="price-tag">
                 <span className="text-danger">{displayPrice}</span> MATIC Each
               </h4>
