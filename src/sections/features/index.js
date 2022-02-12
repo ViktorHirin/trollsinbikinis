@@ -15,7 +15,7 @@ const Index = () => {
             What makes us stand out from the Rest?
           </h2>
           <p className="feature-para">
-            The TrollsInBikinis - TIB is undoubtedly distinctive. Here are some of the
+            TrollsInBikinis - TIB is undoubtedly distinctive. Here are some of the
             features that make us second to none.{" "}
           </p>
           <div className="row">
