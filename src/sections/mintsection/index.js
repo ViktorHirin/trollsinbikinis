@@ -29,7 +29,7 @@ const Index = ({
   };
 
   return (
-    <section id="mint" className="mint-part py-6 jumptarget">
+    <section id="mint" className="mint-part py-1 jumptarget">
       <div className="container">
         <div className="row align-items-center">
           <div className="col-xl-6 text-center mb-xl-0 mb-3" data-aos="fade-up">
