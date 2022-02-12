@@ -18,7 +18,7 @@ const Index = () => {
                   href="#accordion .item-1"
                   className="btn-block"
                 >
-                  How many TIB’s will exist?
+                  How many TIB NFT’s will exist?
                   <i className="fas fa-plus float-right"></i>
                 </a>
               </h5>
@@ -30,7 +30,7 @@ const Index = () => {
             >
               <div className="card-body">
                 <p className="card-text">
-                  There will be 10,000 Trolls on the Ethereum Blockchain.
+                  There will be 10,000 TIB NFT's on the Ethereum Blockchain.
                 </p>
               </div>
             </div>
@@ -57,7 +57,7 @@ const Index = () => {
             >
               <div className="card-body">
                 <p className="card-text">
-                  The price of one Trolls In Bikinis will be 0.04 MATIC + GAS Fees
+                  The price of one TrollsInBikinis will be 0.04 MATIC + GAS Fees
                 </p>
               </div>
             </div>
@@ -84,7 +84,7 @@ const Index = () => {
             >
               <div className="card-body">
                 <p className="card-text">
-                  Seven Troll NFTs can be purchased per address.
+                  Seven Troll NFT's can be purchased per address.
                 </p>
               </div>
             </div>
@@ -136,7 +136,7 @@ const Index = () => {
             >
               <div className="card-body">
                 <p className="card-text">
-                  The TrollsInBikinis will be listed on OpenSea once the sale is
+                  TrollsInBikinis will be listed on OpenSea once the sale is
                   over.
                 </p>
               </div>
@@ -152,7 +152,7 @@ const Index = () => {
                   href="#accordion .item-6"
                   className="btn-block"
                 >
-                  Where can I see the Trolls I’ve purchased?
+                  Where can I see my TrollsInBikinis once I've purchased
                   <i className="fas fa-plus float-right"></i>
                 </a>
               </h5>
@@ -244,7 +244,7 @@ const Index = () => {
               data-parent="#accordion"
             >
               <div className="card-body">
-                <p className="card-text">OCTOBER 20TH 1:00 PM UTC.</p>
+                <p className="card-text">?</p>
               </div>
             </div>
           </div>

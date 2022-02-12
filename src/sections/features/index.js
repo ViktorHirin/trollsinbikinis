@@ -15,7 +15,7 @@ const Index = () => {
             What makes us stand out from the Rest?
           </h2>
           <p className="feature-para">
-            The Trolls in Bikinis is undoubtedly distinctive. Here are some of the
+            The TrollsInBikinis - TIB is undoubtedly distinctive. Here are some of the
             features that make us second to none.{" "}
           </p>
           <div className="row">
@@ -55,7 +55,7 @@ const Index = () => {
                 <img className="mb-3" src={Feature3} alt="featureIcon3" />
                 <h4 className="feature-box-title mb-3">Fair Distribution</h4>
                 <p className="feature-text mb-0">
-                All of these NFTs will be distributed fairly and without any discrimination. We believe in giving equal chance to everyone.
+                All of these NFTs will be distributed fairly and without any discrimination. We believe in chance to everyone.
                 </p>
               </div>
             </div>

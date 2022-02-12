@@ -127,7 +127,7 @@ const MintBox = ({ msg = "Connect", connect, loadWeb3 }) => (
       <div className="mint-header-text">
         <h3 className="mint-box-title">Join Trolls In  Bikinis!</h3>
         <p className="mb-0 mint-box-para">
-        Enter the amount of TIB you would like to purchase.
+        Enter the amount of TrollsInBikinis - TIB you would like to purchase.
         </p>
       </div>
       <div className="mint-box-logo">

@@ -9,12 +9,10 @@ const Index = () => {
     <section id="team" className="team-part py-6 bg-warning jumptarget">
       <div className="container">
         <h2 className="main-title center whitedot">
-          <strong>Meet the movers and shakers behind The TrollsInBikinis - TIB</strong>
+          <strong>Meet the movers and shakers behind TrollsInBikinis - TIB</strong>
         </h2>
         <p className="rarity-para">
-          The TrollsInBikinis ( TIB ) was established by a squad that are devoted to NFTs.
-          These highly experienced crew created the marvelous world of The
-          TrollsInBikinis ( TIB ).
+          TrollsInBikinis ( TIB ) was established by a squad that are devoted to NFTs.
         </p>
         <div className="row">
           <div
@@ -51,7 +49,7 @@ const Index = () => {
               </span>
             </h4>
             <p className="mb-0">
-            Secreto is a major producer of TIB NFT's and his goal is to one day take over the world.  I want this troll instead and the words switched out 
+            Secreto is a major producer of TIB NFT's and his goal is to one day take over the world.
             </p>
           </div>
           <div
