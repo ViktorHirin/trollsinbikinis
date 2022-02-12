@@ -84,7 +84,7 @@ const Index = () => {
             >
               <div className="card-body">
                 <p className="card-text">
-                  Seven Troll NFT's can be purchased per address.
+                  Seven TIB NFT's can be purchased per address.
                 </p>
               </div>
             </div>
