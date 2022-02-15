@@ -26,7 +26,7 @@ function App() {
     useState(false);
   const [mintingInProgress, setMintingInProgress] = useState(false);
   const [confirmTransaction, setConfirmTransaction] = useState(false);
-  const [preSaleEligibility, setPreSaleEligibility] = useState(false);
+  // const [preSaleEligibility, setPreSaleEligibility] = useState(false);
   const [saleLive, setSaleLive] = useState(false);
   const [preSale, setPreSale] = useState(false);
 
@@ -143,15 +143,13 @@ function App() {
     if (contract) {
       if (chainId === 80001) {
 
-        const eligibility = await contract.methods
-          .checkPresaleEligiblity(account)
-          .call();
+        // const eligibility = await contract.methods
+        //   .checkPresaleEligiblity(account)
+        //   .call();
         
-        console.log(`eligbility = `,eligibility);
+        // console.log(`eligbility = `,eligibility);
         const presaleOpen = await contract.methods.presaleOpen().call();
         const saleOpen = await contract.methods.saleOpen().call();
-        console.log("saleopen:", saleOpen);
-        console.log("presaleopen:", presaleOpen);
 
         if (presaleOpen === false && saleOpen === false) {
           setPreSale(true);

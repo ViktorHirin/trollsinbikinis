@@ -1,18 +1,5 @@
 export const contractAbi = [
 	{
-		"inputs": [
-			{
-				"internalType": "address[]",
-				"name": "addresses",
-				"type": "address[]"
-			}
-		],
-		"name": "addToPresale",
-		"outputs": [],
-		"stateMutability": "nonpayable",
-		"type": "function"
-	},
-	{
 		"inputs": [],
 		"stateMutability": "nonpayable",
 		"type": "constructor"
@@ -223,12 +210,38 @@ export const contractAbi = [
 	{
 		"inputs": [
 			{
+				"internalType": "string",
+				"name": "baseURI",
+				"type": "string"
+			}
+		],
+		"name": "setBaseURI",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
 				"internalType": "uint256",
 				"name": "_max_allowed_limit",
 				"type": "uint256"
 			}
 		],
 		"name": "setMaxAllowed",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_owner_reserved",
+				"type": "uint256"
+			}
+		],
+		"name": "setOwnerReserved",
 		"outputs": [],
 		"stateMutability": "nonpayable",
 		"type": "function"
@@ -322,20 +335,6 @@ export const contractAbi = [
 		"type": "function"
 	},
 	{
-		"inputs": [],
-		"name": "whitelistPresale",
-		"outputs": [],
-		"stateMutability": "nonpayable",
-		"type": "function"
-	},
-	{
-		"inputs": [],
-		"name": "withdrawAll",
-		"outputs": [],
-		"stateMutability": "nonpayable",
-		"type": "function"
-	},
-	{
 		"inputs": [
 			{
 				"internalType": "address",
@@ -349,25 +348,6 @@ export const contractAbi = [
 				"internalType": "uint256",
 				"name": "",
 				"type": "uint256"
-			}
-		],
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"inputs": [
-			{
-				"internalType": "address",
-				"name": "addr",
-				"type": "address"
-			}
-		],
-		"name": "checkPresaleEligiblity",
-		"outputs": [
-			{
-				"internalType": "bool",
-				"name": "",
-				"type": "bool"
 			}
 		],
 		"stateMutability": "view",
@@ -607,4 +587,4 @@ export const contractAbi = [
 // export const contractAddress = "0xBe10903776Fc7293b88bD2C037e9572692495c52";
 // export const contractAddress = "0x45cC39E739928501641BD8E052Ab52b56BF1c25b";
 
-export const contractAddress = "0x2EA824221D75C7a65bEFbb8f8cf2e67085b50c64";
+export const contractAddress = "0x821173E3C53B43Ae3918243ef73a7F5bB4ECB86E";

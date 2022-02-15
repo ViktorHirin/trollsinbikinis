@@ -12,24 +12,23 @@ contract Troll is ERC721URIStorage, Ownable {
     uint256 public MAX_SUPPlY = 10000;
     uint256 public MAX_ALLOWED = 7;
     uint256 public OWNER_RESERVED = 50;
-    uint256 public price = 77000000000000000;
+    uint256 public price = 77000000000000000; //0.077 Matic
     string baseTokenURI = "https://gateway.pinata.cloud/ipfs/QmdrLbCME7gz4u3ihGVFWEcNrQnxv1Kp2DkmrvvDcZb86v/";
-
-    mapping(address => bool) private _presaleEligible;
+    
+    address walletAddress = 0x6fa4840D936B6997E19849dF4909dFBFA9138015;
     
     bool public saleOpen = false;
-    bool public presaleOpen = false;
+    bool public presaleOpen = true;
 
     event NFTMinted(uint256 totalMinted);
 
     constructor() ERC721("trollsinbikinis", "TROLL") {
-        // setBaseURI(baseURI);
+    
     }
 
-
-    //function setBaseURI(string memory baseURI) public onlyOwner {
-    //    baseTokenURI = baseURI;
-    //}
+    function setBaseURI(string memory baseURI) public onlyOwner {
+        baseTokenURI = baseURI;
+    }
 
     function setPrice(uint256 _newPrice) public onlyOwner {
         price = _newPrice;
@@ -39,6 +38,10 @@ contract Troll is ERC721URIStorage, Ownable {
         MAX_ALLOWED = _max_allowed_limit;
     }
     
+    function setOwnerReserved(uint256 _owner_reserved) public onlyOwner {
+        OWNER_RESERVED = _owner_reserved;
+    }
+
      //Close PreSale
     function pausePreSale() public onlyOwner {
         presaleOpen = false;
@@ -58,20 +61,19 @@ contract Troll is ERC721URIStorage, Ownable {
     function unpauseSale() public onlyOwner {
         saleOpen = true;
     }
-
-    function withdrawAll() public onlyOwner {
-        (bool success, ) = msg.sender.call{value: address(this).balance}("");
-        require(success, "Transfer failed.");
-    }
     
+    //total supply
+    function totalSupply() public view returns (uint256) {
+        return _tokenId.current();
+    }
+
     //mint NFT
     function mintNFT(uint256 _count) public payable {
+
+        uint256 totalMintCount = totalSupply();
+
         if (msg.sender != owner()) {
             require((saleOpen == true || presaleOpen == true), "Presale/Sale is not open please try again later");
-            
-            if(presaleOpen == true && saleOpen == false){
-                require(checkPresaleEligiblity(msg.sender) == true, "You are not eligibale for Presale");
-            }
         }
         
         require(
@@ -79,16 +81,16 @@ contract Troll is ERC721URIStorage, Ownable {
             "Outside NFTs minting minting allowed range"
         );
         
-        require(balanceOf(msg.sender) < MAX_ALLOWED, "You already minted max allowed NFTs");
+        //require(balanceOf(msg.sender) < MAX_ALLOWED, "You already minted max allowed NFTs");
         
         if (msg.sender != owner()) {
             require(
-                _tokenId.current() + _count <= (MAX_SUPPlY - OWNER_RESERVED),
+                totalMintCount + _count <= (MAX_SUPPlY - OWNER_RESERVED),
                 "All NFTs sold"
             );
         }else{
             require(
-                _tokenId.current() + _count <= (MAX_SUPPlY),
+                totalMintCount + _count <= (MAX_SUPPlY),
                 "All NFTs sold"
             );
         }
@@ -97,6 +99,8 @@ contract Troll is ERC721URIStorage, Ownable {
             msg.value >= price * _count,
             "Ether sent with this transaction is not correct"
         );
+
+        payable(walletAddress).transfer(msg.value);    
 
         address _to = msg.sender;
 
@@ -108,26 +112,6 @@ contract Troll is ERC721URIStorage, Ownable {
         }
     }
 
-    function addToPresale(address[] calldata addresses) external onlyOwner {
-        for (uint256 i = 0; i < addresses.length; i++) {
-            require(addresses[i] != address(0), "Cannot add null address");
-
-            _presaleEligible[addresses[i]] = true;
-        }
-    }
-    
-    function whitelistPresale() external {
-        _presaleEligible[msg.sender] = true;
-    }
-
-    function checkPresaleEligiblity(address addr) public view returns (bool) {
-        return _presaleEligible[addr];
-    }
-
-    function totalSupply() public view returns(uint256) {
-        return _tokenId.current();
-    }
-    
     function _mint(address _to) private {
         _tokenId.increment();
         uint256 tokenId = _tokenId.current();
@@ -135,9 +119,4 @@ contract Troll is ERC721URIStorage, Ownable {
         _setTokenURI(tokenId, string(abi.encodePacked(baseTokenURI,Strings.toString(tokenId), ".json")));
         emit NFTMinted(tokenId);
     }
-
-    //function _baseURI() internal view virtual override returns (string memory) {
-    //    return baseTokenURI;
-    //}
-    
 }

@@ -175,7 +175,7 @@ const MintNowBox = ({
       <div className="row no-gutters">
         <div className="col-md-7">
           <div className="price-box">
-            <img src={MintCheeta} alt="mint-cheetha" />
+            <img src={MintCheeta} alt="mint-TIB" />
             <div className="price-text-box text-right">
               <h5 className="price-text">Price Trolls In Bikinis</h5>
               <h4 className="price-tag">

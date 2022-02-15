@@ -165,6 +165,7 @@ const Index = () => {
               <div className="card-body">
                 <p className="card-text">
                   You can see it on MetaMask or your OpenSea profile.
+                  <a href="https://testnets.opensea.io/collection/trollsinbikinis-v4">OpenSea</a>
                 </p>
               </div>
             </div>
