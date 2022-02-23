@@ -18,7 +18,7 @@ const Index = ({
   const changeHandler = (e) => {
     const reg = /^[0-9\b]+$/;
     if (e.target.value === "" || reg.test(e.target.value)) {
-      if (e.target.value === "" || e.target.value <= 7) {
+      if (e.target.value === "" || e.target.value <= 10000) {
         setValue(e.target.value);
       }
     }
@@ -192,13 +192,13 @@ const MintNowBox = ({
             <input
               className="form-control"
               type="number"
-              max={7}
+              max={10000}
               value={value}
               onChange={changeHandler}
             />
             <div className="input-group-append">
               <button className="btn" type="button">
-                7 max
+                10000 max
               </button>
             </div>
           </div>
