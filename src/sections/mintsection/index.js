@@ -36,7 +36,7 @@ const Index = ({
             {difference > 0 ? (
               <Timer />
             ) : account ? (
-              chainId === 80001 ? (
+              chainId === 137 ? (
                 totalSupply !== 0 && totalSupply === maxSupply ? (
                   <Soldout />
                 ) : (

@@ -77,7 +77,7 @@ function App() {
     // you are connected to main net
     // Please connect to main net
 
-    if (chainId === 80001) {
+    if (chainId === 137) {
       toast(`You are connected to Polygon test net`, {
         type: "success",
         position: toast.POSITION.BOTTOM_CENTER,
@@ -141,7 +141,7 @@ function App() {
 
   async function mint(mintCount) {
     if (contract) {
-      if (chainId === 80001) {
+      if (chainId === 137) {
 
         // const eligibility = await contract.methods
         //   .checkPresaleEligiblity(account)

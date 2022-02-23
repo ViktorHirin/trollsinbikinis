@@ -237,19 +237,6 @@ export const contractAbi = [
 		"inputs": [
 			{
 				"internalType": "uint256",
-				"name": "_owner_reserved",
-				"type": "uint256"
-			}
-		],
-		"name": "setOwnerReserved",
-		"outputs": [],
-		"stateMutability": "nonpayable",
-		"type": "function"
-	},
-	{
-		"inputs": [
-			{
-				"internalType": "uint256",
 				"name": "_newPrice",
 				"type": "uint256"
 			}
@@ -449,19 +436,6 @@ export const contractAbi = [
 		"type": "function"
 	},
 	{
-		"inputs": [],
-		"name": "OWNER_RESERVED",
-		"outputs": [
-			{
-				"internalType": "uint256",
-				"name": "",
-				"type": "uint256"
-			}
-		],
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
 		"inputs": [
 			{
 				"internalType": "uint256",
@@ -587,4 +561,4 @@ export const contractAbi = [
 // export const contractAddress = "0xBe10903776Fc7293b88bD2C037e9572692495c52";
 // export const contractAddress = "0x45cC39E739928501641BD8E052Ab52b56BF1c25b";
 
-export const contractAddress = "0x821173E3C53B43Ae3918243ef73a7F5bB4ECB86E";
+export const contractAddress = "0x4f6a59a078A024f02b4259DbA4C4B552722093B5";
