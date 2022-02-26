@@ -78,7 +78,7 @@ function App() {
     // Please connect to main net
 
     if (chainId === 137) {
-      toast(`You are connected to Polygon test net`, {
+      toast(`You are connected to Polygon net`, {
         type: "success",
         position: toast.POSITION.BOTTOM_CENTER,
       });
