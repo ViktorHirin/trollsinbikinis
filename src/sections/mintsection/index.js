@@ -65,7 +65,7 @@ const Index = ({
                   <img className="mr-2" src={Check} alt="cheak" />
                   Mint Cost :{" "}
                   <strong>
-                   0.04 MATIC + GAS
+                   2.13 MATIC + GAS
                   </strong>
                 </li>
                 <li>
@@ -192,13 +192,13 @@ const MintNowBox = ({
             <input
               className="form-control"
               type="number"
-              max={10000}
+              max={7}
               value={value}
               onChange={changeHandler}
             />
             <div className="input-group-append">
               <button className="btn" type="button">
-                10000 max
+                7 max
               </button>
             </div>
           </div>

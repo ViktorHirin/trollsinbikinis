@@ -57,7 +57,7 @@ const Index = () => {
             >
               <div className="card-body">
                 <p className="card-text">
-                  The price of one TrollsInBikinis will be 0.04 MATIC + GAS Fees
+                  The price of one TrollsInBikinis will be 2.13 MATIC + GAS Fees
                 </p>
               </div>
             </div>
