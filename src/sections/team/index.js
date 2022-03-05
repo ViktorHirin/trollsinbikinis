@@ -31,7 +31,7 @@ const Index = () => {
               </span>
             </h4>
             <p className="mb-0">
-            Batmandio (Aka Batman), is an entrepreneur who loves the NFT business and he spends most of his time in his Batcave.  So, if you see Christopher it needs to be Batmandio
+            Batmandio (Aka Batman), is an entrepreneur who loves the NFT business and he spends most of his time in his Batcave.
             </p>
           </div>
           

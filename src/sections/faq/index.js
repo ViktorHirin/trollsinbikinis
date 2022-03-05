@@ -245,7 +245,7 @@ const Index = () => {
               data-parent="#accordion"
             >
               <div className="card-body">
-                <p className="card-text">?</p>
+                <p className="card-text">3/5/2022</p>
               </div>
             </div>
           </div>

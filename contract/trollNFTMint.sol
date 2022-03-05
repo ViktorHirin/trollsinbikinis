@@ -12,13 +12,13 @@ contract Troll is ERC721URIStorage, Ownable {
     uint256 public MAX_SUPPlY = 10000;
     uint256 public MAX_ALLOWED = 7;
     uint256 public OWNER_RESERVED = 50;
-    uint256 public price = 21346153846153846;
+    uint256 public price = 2130000000000000000;
     string baseTokenURI = "https://gateway.pinata.cloud/ipfs/QmdrLbCME7gz4u3ihGVFWEcNrQnxv1Kp2DkmrvvDcZb86v/";
     
     address walletAddress = 0x6fa4840D936B6997E19849dF4909dFBFA9138015;
     
-    bool public saleOpen = false;
-    bool public presaleOpen = true;
+    bool public saleOpen = true;
+    bool public presaleOpen = false;
 
     event NFTMinted(uint256 totalMinted);
 
