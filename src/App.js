@@ -107,7 +107,7 @@ function App() {
         })
         .on("error", console.error);
     } else {
-      toast("Please connect to main net", {
+      toast("Please connect to polygon main net", {
         type: "error",
         position: toast.POSITION.BOTTOM_CENTER,
       });

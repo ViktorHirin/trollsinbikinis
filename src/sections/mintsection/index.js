@@ -51,7 +51,7 @@ const Index = ({
                   />
                 )
               ) : (
-                <MintBox msg={"Please Connect To Mainnet"} />
+                <MintBox msg={"Please Connect To Polygon Mainnet"} />
               )
             ) : (
               <MintBox connect={true} loadWeb3={loadWeb3} />
